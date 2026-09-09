@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio — Yolang</title>
+<meta name="description" content="Portofolio pribadi — Siswa TKJ, fokus administrasi sistem jaringan &amp; keamanan siber.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============== NAVBAR (KANAN, GAYA PIXEL) ============== -->
+<button id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+<nav id="navbar" aria-label="Navigasi utama">
+  <ul class="nav-list">
+    <li data-target="home">
+      <a href="#home">
+        <span class="slot">
+          <svg viewBox="0 0 24 24" class="nav-icon"><path d="M4 11 12 4l8 7v9h-6v-6h-4v6H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="miter"/></svg>
+        </span>
+        <span class="nav-label pixel">Home</span>
+      </a>
+    </li>
+    <li data-target="about">
+      <a href="#about">
+        <span class="slot">
+          <svg viewBox="0 0 24 24" class="nav-icon"><rect x="4" y="4" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"/><line x1="12" y1="4" x2="12" y2="20" stroke="currentColor" stroke-width="2"/></svg>
+        </span>
+        <span class="nav-label pixel">About</span>
+      </a>
+    </li>
+    <li data-target="journey">
+      <a href="#journey">
+        <span class="slot">
+          <svg viewBox="0 0 24 24" class="nav-icon"><path d="M4 20 9 8l3 6 3-9 5 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="nav-label pixel">Journey</span>
+      </a>
+    </li>
+    <li data-target="skill">
+      <a href="#skill">
+        <span class="slot">
+          <svg viewBox="0 0 24 24" class="nav-icon"><path d="M3 15 9 9l2 2-6 6-2-2z" fill="currentColor"/><path d="M10 8l3-4 4 1-1 4-3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="nav-label pixel">Skill</span>
+      </a>
+    </li>
+    <li data-target="project">
+      <a href="#project">
+        <span class="slot">
+          <svg viewBox="0 0 24 24" class="nav-icon"><rect x="4" y="4" width="7" height="7" fill="currentColor"/><rect x="13" y="4" width="7" height="7" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="13" width="7" height="7" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="13" width="7" height="7" fill="currentColor"/></svg>
+        </span>
+        <span class="nav-label pixel">Project</span>
+      </a>
+    </li>
+    <li data-target="contact">
+      <a href="#contact">
+        <span class="slot">
+          <svg viewBox="0 0 24 24" class="nav-icon"><rect x="3" y="6" width="18" height="13" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </span>
+        <span class="nav-label pixel">Contact</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<main id="stageWrap">
+
+  <!-- ============== HOME ============== -->
+  <section class="stage stage-home" id="home" data-time="day">
+    <div class="mc-scene" aria-hidden="true">
+      <div class="mc-sky"></div>
+      <div class="mc-stars"></div>
+      <button type="button" id="timeToggle" class="mc-sun" aria-label="Ganti waktu Pagi/Malam">
+        <span class="face-sun"></span>
+        <span class="face-moon"><span class="crater c1"></span><span class="crater c2"></span></span>
+      </button>
+      <div class="mc-cloud c1"></div>
+      <div class="mc-cloud c2"></div>
+      <div class="mc-cloud c3"></div>
+      <div class="mc-terrain">
+        <div class="mc-tree t1"><span class="leaves"></span><span class="trunk"></span></div>
+        <div class="mc-tree t2"><span class="leaves"></span><span class="trunk"></span></div>
+      </div>
+    </div>
+
+    <div class="home-layout">
+      <div class="home-content">
+        <span class="pixel eyebrow">// Portofolio</span>
+        <div class="avatar-frame">
+          <img src="otw cbr.png" alt="Foto Yolang">
+        </div>
+        <h1 class="pixel home-title">Website<br>Yolang</h1>
+        <p class="home-tagline">
+          Siswa jurusan <strong>Teknik Komputer dan Jaringan (TKJ)</strong> —
+          di SMK Negeri 1 Tenggarong yang membangun dan mengamankan infrastruktur jaringan, satu blok demi satu blok.
+        </p>
+        <a href="#about" class="btn-pixel">Mulai Jelajahi ↓</a>
+      </div>
+
+      <div class="mc-character" aria-hidden="true">
+        <div class="speech-bubble pixel">Welcome to my website</div>
+
+        <div class="voxel-figure figure-day">
+          <span class="v-head"><span class="v-eye v-eye-l"></span><span class="v-eye v-eye-r"></span></span>
+          <span class="v-torso"></span>
+          <span class="v-arm v-arm-l"></span>
+          <span class="v-arm v-arm-r"></span>
+          <span class="v-leg v-leg-l"></span>
+          <span class="v-leg v-leg-r"></span>
+        </div>
+
+        <div class="voxel-figure figure-night">
+          <span class="v-head"><span class="v-eye v-eye-l"></span><span class="v-eye v-eye-r"></span></span>
+          <span class="v-torso"></span>
+          <span class="v-arm v-arm-l"></span>
+          <span class="v-arm v-arm-r"></span>
+          <span class="v-leg v-leg-l"></span>
+          <span class="v-leg v-leg-r"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== ABOUT ============== -->
+  <section class="stage stage-light" id="about">
+    <div class="section-inner">
+      <span class="tag-index pixel">01</span>
+      <h2 class="pixel section-title">About</h2>
+
+      <div class="about-grid">
+        <p class="body-text">
+          Saya Yolan Aya Safutra, siswa jurusan <strong>Teknik Komputer dan Jaringan (TKJ)</strong>,
+          dengan minat utama di administrasi server, keamanan siber/jaringan, dan
+          infrastruktur yang bisa diakses secara online. Proyek portofolio ini
+          sendiri adalah bagian dari praktik langsung: mulai dari domain, DNS,
+          VPS, sampai website ini akhirnya bisa diakses lewat internet.
+        </p>
+        <p class="body-text">
+          Saya percaya jaringan yang stabil dan aman adalah fondasi dari
+          segala sesuatu yang berjalan di atasnya — dan itu yang saya coba
+          pelajari dan terapkan setiap hari.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== JOURNEY ============== -->
+  <section class="stage stage-light" id="journey">
+    <div class="section-inner">
+      <span class="tag-index pixel">02</span>
+      <h2 class="pixel section-title">Journey</h2>
+
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="10" width="18" height="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 10 12 4l9 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </span>
+          <div class="timeline-body">
+            <span class="timeline-year pixel">2015 — 2021</span>
+            <h3>SDN 021 Tenggarong</h3>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 9h16M9 5v14" stroke="currentColor" stroke-width="2"/></svg>
+          </span>
+          <div class="timeline-body">
+            <span class="timeline-year pixel">2021 — 2024</span>
+            <h3>SMP YPK 1 Tenggarong</h3>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M2 8 12 3l10 5-10 5-10-5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </span>
+          <div class="timeline-body">
+            <span class="timeline-year pixel">2024 — 2027</span>
+            <h3>SMKN 1 Tenggarong</h3>
+          </div>
+        </li>
+        <li class="timeline-item timeline-next">
+          <span class="timeline-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4 3"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2"/></svg>
+          </span>
+          <div class="timeline-body">
+            <span class="timeline-year pixel">Next</span>
+            <h3>Universitas Kutai Kartanegara</h3>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============== SKILL ============== -->
+<section class="stage stage-light" id="skill">
+  <button type="button" class="skill-arrow skill-arrow-prev" id="skillPrev" aria-label="Skill sebelumnya">
+    <svg viewBox="0 0 24 24"><path d="M15 4 7 12l8 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter"/></svg>
+  </button>
+  <button type="button" class="skill-arrow skill-arrow-next" id="skillNext" aria-label="Skill berikutnya">
+    <svg viewBox="0 0 24 24"><path d="M9 4l8 8-8 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter"/></svg>
+  </button>
+
+  <div class="section-inner">
+    <span class="tag-index pixel">03</span>
+    <h2 class="pixel section-title">Skill</h2>
+
+    <div class="skill-carousel">
+
+      <div class="skill-slide active">
+        <div class="skill-photos">
+          <div class="skill-photo-item"><span class="pixel">[ Bukti 1 ]</span></div>
+          <div class="skill-photo-item"><span class="pixel">[ Bukti 2 ]</span></div>
+          <div class="skill-photo-item"><span class="pixel">[ Bukti 3 ]</span></div>
+          <div class="skill-photo-item"><span class="pixel">[ Bukti 4 ]</span></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-head">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"/><rect x="7" y="7" width="4" height="4" fill="currentColor"/><rect x="13" y="13" width="4" height="4" fill="currentColor"/></svg>
+            </span>
+            <h3>Linux Server</h3>
+          </div>
+          <p>Instalasi, konfigurasi, dan administrasi server berbasis Linux (Debian) — user management, service, hingga hardening dasar.</p>
+          <div class="hearts" aria-hidden="true">
+            <span class="heart full"></span><span class="heart full"></span><span class="heart full"></span><span class="heart empty"></span><span class="heart empty"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-slide">
+        <div class="skill-photos">
+          <div class="skill-photo-item"><span class="pixel">[ Bukti 1 ]</span></div>
+          <div class="skill-photo-item"><span class="pixel">[ Bukti 2 ]</span></div>
+          <div class="skill-photo-item"><span class="pixel">[ Bukti 3 ]</span></div>
+          <div class="skill-photo-item"><span class="pixel">[ Bukti 4 ]</span></div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-head">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 5-3 8-7 9-4-1-7-4-7-9V7l7-4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Cyber Security</h3>
+          </div>
+          <p>Dasar keamanan jaringan: firewall, hardening akses, dan praktik baik untuk menjaga infrastruktur tetap aman.</p>
+          <div class="hearts" aria-hidden="true">
+            <span class="heart full"></span><span class="heart full"></span><span class="heart full"></span><span class="heart full"></span><span class="heart full"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="skill-dots" id="skillDots">
+      <span class="skill-dot active" data-i="0"></span>
+      <span class="skill-dot" data-i="1"></span>
+    </div>
+  </div>
+</section>
+
+  <!-- ============== PROJECT ============== -->
+  <section class="stage stage-light" id="project">
+    <div class="section-inner section-inner-wide">
+      <span class="tag-index pixel">04</span>
+      <h2 class="pixel section-title">Project</h2>
+
+      <div class="project-list">
+
+        <article class="project-row">
+          <button type="button" class="project-visual" data-zoom="0" style="--v-from:#6ec6f1; --v-to:#1c2444;">
+            <span class="visual-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" fill="none" stroke="currentColor" stroke-width="2"/><rect x="3" y="14" width="18" height="6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="7" cy="7" r="1" fill="currentColor"/><circle cx="7" cy="17" r="1" fill="currentColor"/></svg>
+            </span>
+            <span class="visual-caption pixel">01 — preview</span>
+            <span class="visual-zoom" aria-hidden="true">+</span>
+          </button>
+
+          <div class="project-info">
+            <span class="project-category pixel">SERVER</span>
+            <h3>Administrasi Sistem Jaringan (Debian)</h3>
+            <p>Instalasi dan konfigurasi server berbasis Linux (Debian).</p>
+
+            <span class="highlights-label pixel">Highlights</span>
+            <ol class="highlights-list">
+              <li><span class="pixel">01</span>Instalasi Debian Server</li>
+              <li><span class="pixel">02</span>Konfigurasi User &amp; Permission</li>
+              <li><span class="pixel">03</span>Setup Service Dasar</li>
+            </ol>
+
+            <div class="tech-tags">
+              <span class="tech-tag">Debian</span>
+              <span class="tech-tag">Linux</span>
+              <span class="tech-tag">Bash</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-row project-row--reverse">
+          <button type="button" class="project-visual" data-zoom="1" style="--v-from:#5b8c3a; --v-to:#1c2444;">
+            <span class="visual-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 8V6a5 5 0 0 1 10 0v2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            </span>
+            <span class="visual-caption pixel">02 — preview</span>
+            <span class="visual-zoom" aria-hidden="true">+</span>
+          </button>
+
+          <div class="project-info">
+            <span class="project-category pixel">NETWORKING</span>
+            <h3>Konfigurasi Mikrotik</h3>
+            <p>Setup routing, firewall, dan manajemen bandwidth menggunakan perangkat Mikrotik untuk jaringan lokal yang stabil dan aman.</p>
+
+            <span class="highlights-label pixel">Highlights</span>
+            <ol class="highlights-list">
+              <li><span class="pixel">01</span>Setup Routing</li>
+              <li><span class="pixel">02</span>Konfigurasi Firewall</li>
+              <li><span class="pixel">03</span>Manajemen Bandwidth</li>
+              <li><span class="pixel">04</span>Monitoring Jaringan</li>
+            </ol>
+
+            <div class="tech-tags">
+              <span class="tech-tag">Mikrotik</span>
+              <span class="tech-tag">RouterOS</span>
+              <span class="tech-tag">Firewall</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-row">
+          <button type="button" class="project-visual" data-zoom="2" style="--v-from:#43cdd8; --v-to:#1c2444;">
+            <span class="visual-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 8h18M9 21h6M12 17v4" stroke="currentColor" stroke-width="2"/></svg>
+            </span>
+            <span class="visual-caption pixel">03 — preview</span>
+            <span class="visual-zoom" aria-hidden="true">+</span>
+          </button>
+
+          <div class="project-info">
+            <span class="project-category pixel">WEB APP</span>
+            <h3>Website Portofolio</h3>
+            <p>Perancangan dan deployment website — mulai dari domain, DNS, hingga konfigurasi web server di VPS/server sekolah.</p>
+
+            <span class="highlights-label pixel">Highlights</span>
+            <ol class="highlights-list">
+              <li><span class="pixel">01</span>Setup Domain &amp; DNS</li>
+              <li><span class="pixel">02</span>Konfigurasi VPS/Server</li>
+              <li><span class="pixel">03</span>Deploy Web Server (Nginx)</li>
+              <li><span class="pixel">04</span>Aktivasi HTTPS (SSL)</li>
+            </ol>
+
+            <div class="tech-tags">
+              <span class="tech-tag">HTML/CSS/JS</span>
+              <span class="tech-tag">Nginx</span>
+              <span class="tech-tag">Cloudflare</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox zoom untuk preview project -->
+  <div id="projectLightbox" class="lightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close pixel" id="lightboxClose">[ Close ]</button>
+    <div class="lightbox-visual" id="lightboxVisual"></div>
+  </div>
+
+  <!-- ============== CONTACT ============== -->
+  <section class="stage stage-light stage-contact" id="contact">
+    <span class="contact-side pixel">
+      <span class="contact-side-label">CONTACT</span>
+      <span class="contact-side-dot"></span>
+    </span>
+
+    <div class="section-inner contact-inner">
+      <span class="tag-index pixel">05</span>
+      <h2 class="pixel contact-title">Contact<br></h2>
+
+      <a href="mailto:yolanayasafutra@email.com" class="contact-email">
+        <svg viewBox="0 0 24 24" class="contact-email-icon"><rect x="2" y="5" width="20" height="14" fill="#fff" stroke="currentColor" stroke-width="2"/><path d="M2 5l10 9 10-9" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10.5" y="12" width="3" height="3" fill="#c0392b"/></svg>
+        yolanayasafutra@email.com
+      </a>
+
+      <ul class="contact-links">
+        <li>
+          <a href="https://github.com/SiAnakLangit" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" class="contact-link-icon"><rect x="3" y="9" width="18" height="11" fill="#8b5a2b" stroke="currentColor" stroke-width="2"/><rect x="3" y="5" width="18" height="6" fill="#a5713a" stroke="currentColor" stroke-width="2"/><rect x="10" y="10" width="4" height="4" fill="#d4af37"/></svg>
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/username" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" class="contact-link-icon"><polygon points="12,3 19,9 12,21 5,9" fill="#3fae58" stroke="currentColor" stroke-width="2"/></svg>
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+
+      <p class="contact-copy pixel">© 2026 Yolan Aya Safutra. All rights reserved.</p>
+    </div>
+  </section>
+
+</main>
+
+<script src="main.js" defer></script>
+</body>
+</html>
