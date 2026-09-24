@@ -87,17 +87,12 @@
       <div class="mc-cloud c2"></div>
       <div class="mc-cloud c3"></div>
       <div class="mc-terrain">
-        <div class="mc-tree t1"><span class="leaves"></span><span class="trunk"></span></div>
-        <div class="mc-tree t2"><span class="leaves"></span><span class="trunk"></span></div>
       </div>
     </div>
 
     <div class="home-layout">
       <div class="home-content">
         <span class="pixel eyebrow">// Portofolio</span>
-        <div class="avatar-frame">
-          <img src="otw cbr.png" alt="Foto Yolang">
-        </div>
         <h1 class="pixel home-title">Website<br>Yolang</h1>
         <p class="home-tagline">
           Siswa jurusan <strong>Teknik Komputer dan Jaringan (TKJ)</strong> —
@@ -105,26 +100,15 @@
         </p>
         <a href="#about" class="btn-pixel">Mulai Jelajahi ↓</a>
       </div>
-
-      <div class="mc-character" aria-hidden="true">
-        <div class="speech-bubble pixel">Welcome to my website</div>
-
-        <div class="voxel-figure figure-day">
-          <span class="v-head"><span class="v-eye v-eye-l"></span><span class="v-eye v-eye-r"></span></span>
-          <span class="v-torso"></span>
-          <span class="v-arm v-arm-l"></span>
-          <span class="v-arm v-arm-r"></span>
-          <span class="v-leg v-leg-l"></span>
-          <span class="v-leg v-leg-r"></span>
+      <!-- FOTO PROFIL: versi pagi & malam, otomatis ganti sesuai toggle matahari/bulan -->
+      <div class="home-photo" aria-hidden="true">
+        <div class="home-photo-frame photo-day">
+          <img src="otw cbr.png" alt="Foto profil Yolang (mode pagi)">
         </div>
-
-        <div class="voxel-figure figure-night">
-          <span class="v-head"><span class="v-eye v-eye-l"></span><span class="v-eye v-eye-r"></span></span>
-          <span class="v-torso"></span>
-          <span class="v-arm v-arm-l"></span>
-          <span class="v-arm v-arm-r"></span>
-          <span class="v-leg v-leg-l"></span>
-          <span class="v-leg v-leg-r"></span>
+        <div class="home-photo-frame photo-night">
+          <!-- Sementara masih pakai foto yang sama. Ganti src di bawah ini
+               kalau sudah punya foto khusus versi malam -->
+          <img src="outfit lengkap.png" alt="Foto profil Yolang (mode malam)">
         </div>
       </div>
     </div>
@@ -217,10 +201,10 @@
 
       <div class="skill-slide active">
         <div class="skill-photos">
-          <div class="skill-photo-item"><span class="pixel">[ Bukti 1 ]</span></div>
-          <div class="skill-photo-item"><span class="pixel">[ Bukti 2 ]</span></div>
-          <div class="skill-photo-item"><span class="pixel">[ Bukti 3 ]</span></div>
-          <div class="skill-photo-item"><span class="pixel">[ Bukti 4 ]</span></div>
+          <div class="skill-photo-item"><img src="web.jpeg" alt="Bukti skill Linux Server 1"></div>
+          <div class="skill-photo-item"><img src="rainloop.jpeg" alt="Bukti skill Linux Server 2"></div>
+          <div class="skill-photo-item"><img src="squirrel.jpeg" alt="Bukti skill Linux Server 3"></div>
+          <div class="skill-photo-item"><img src="wp.jpeg" alt="Bukti skill Linux Server 4"></div>
         </div>
 
         <div class="skill-item">
@@ -239,10 +223,10 @@
 
       <div class="skill-slide">
         <div class="skill-photos">
-          <div class="skill-photo-item"><span class="pixel">[ Bukti 1 ]</span></div>
-          <div class="skill-photo-item"><span class="pixel">[ Bukti 2 ]</span></div>
-          <div class="skill-photo-item"><span class="pixel">[ Bukti 3 ]</span></div>
-          <div class="skill-photo-item"><span class="pixel">[ Bukti 4 ]</span></div>
+          <div class="skill-photo-item"><img src="hack1.png" alt="Bukti skill Cyber Security 1"></div>
+          <div class="skill-photo-item"><img src="hack2.jpeg" alt="Bukti skill Cyber Security 2"></div>
+          <div class="skill-photo-item"><img src="hack3.jpeg" alt="Bukti skill Cyber Security 3"></div>
+          <div class="skill-photo-item"><img src="hack4.jpeg" alt="Bukti skill Cyber Security 4"></div>
         </div>
 
         <div class="skill-item">
@@ -278,9 +262,7 @@
 
         <article class="project-row">
           <button type="button" class="project-visual" data-zoom="0" style="--v-from:#6ec6f1; --v-to:#1c2444;">
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="6" fill="none" stroke="currentColor" stroke-width="2"/><rect x="3" y="14" width="18" height="6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="7" cy="7" r="1" fill="currentColor"/><circle cx="7" cy="17" r="1" fill="currentColor"/></svg>
-            </span>
+            <img class="visual-photo" src="wp.png" alt="Preview project Debian">
             <span class="visual-caption pixel">01 — preview</span>
             <span class="visual-zoom" aria-hidden="true">+</span>
           </button>
@@ -307,9 +289,7 @@
 
         <article class="project-row project-row--reverse">
           <button type="button" class="project-visual" data-zoom="1" style="--v-from:#5b8c3a; --v-to:#1c2444;">
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 8V6a5 5 0 0 1 10 0v2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-            </span>
+            <img class="visual-photo" src="route.png" alt="Preview project Mikrotik">
             <span class="visual-caption pixel">02 — preview</span>
             <span class="visual-zoom" aria-hidden="true">+</span>
           </button>
@@ -337,9 +317,7 @@
 
         <article class="project-row">
           <button type="button" class="project-visual" data-zoom="2" style="--v-from:#43cdd8; --v-to:#1c2444;">
-            <span class="visual-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 8h18M9 21h6M12 17v4" stroke="currentColor" stroke-width="2"/></svg>
-            </span>
+            <img class="visual-photo" src="web porto.png" alt="Preview project Website Portofolio">
             <span class="visual-caption pixel">03 — preview</span>
             <span class="visual-zoom" aria-hidden="true">+</span>
           </button>
@@ -386,9 +364,9 @@
       <span class="tag-index pixel">05</span>
       <h2 class="pixel contact-title">Contact<br></h2>
 
-      <a href="mailto:yolanayasafutra@email.com" class="contact-email">
+      <a href="mailto:yolanayasafutra@gmail.com" class="contact-email">
         <svg viewBox="0 0 24 24" class="contact-email-icon"><rect x="2" y="5" width="20" height="14" fill="#fff" stroke="currentColor" stroke-width="2"/><path d="M2 5l10 9 10-9" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10.5" y="12" width="3" height="3" fill="#c0392b"/></svg>
-        yolanayasafutra@email.com
+        yolanayasafutra@gmail.com
       </a>
 
       <ul class="contact-links">
@@ -399,7 +377,7 @@
           </a>
         </li>
         <li>
-          <a href="https://linkedin.com/in/username" target="_blank" rel="noopener">
+          <a href="https://www.linkedin.com/in/yolan-aya-safutra-7b1745435/" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" class="contact-link-icon"><polygon points="12,3 19,9 12,21 5,9" fill="#3fae58" stroke="currentColor" stroke-width="2"/></svg>
             LinkedIn
           </a>

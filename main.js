@@ -106,29 +106,55 @@
 /* ---------------------------------------------------------
    5. LIGHTBOX PROJECT — klik preview untuk zoom
    --------------------------------------------------------- */
-(function projectLightbox() {
+(function mediaLightbox() {
   const lightbox = document.getElementById('projectLightbox');
   const visualEl = document.getElementById('lightboxVisual');
   const closeBtn = document.getElementById('lightboxClose');
-  const triggers = document.querySelectorAll('.project-visual');
-  if (!lightbox || !visualEl || !triggers.length) return;
+  if (!lightbox || !visualEl || !closeBtn) return;
 
-  function open(trigger) {
-    const from = getComputedStyle(trigger).getPropertyValue('--v-from').trim();
-    const to = getComputedStyle(trigger).getPropertyValue('--v-to').trim();
-    const iconHTML = trigger.querySelector('.visual-icon')?.innerHTML || '';
-    visualEl.style.background = `linear-gradient(155deg, ${from}, ${to})`;
-    visualEl.innerHTML = `<span class="visual-icon" style="width:34%">${iconHTML}</span>`;
+  function show() {
     lightbox.classList.add('open');
     lightbox.setAttribute('aria-hidden', 'false');
   }
-
   function close() {
     lightbox.classList.remove('open');
     lightbox.setAttribute('aria-hidden', 'true');
   }
 
-  triggers.forEach(t => t.addEventListener('click', () => open(t)));
+  // ---- Preview project (semua project sudah pasti ada fotonya) ----
+  document.querySelectorAll('.project-visual').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const photo = trigger.querySelector('.visual-photo');
+      if (!photo) return;
+      visualEl.style.background = '#05060a';
+      visualEl.innerHTML = '';
+      const big = document.createElement('img');
+      big.src = photo.src;
+      big.alt = photo.alt;
+      big.style.width = '100%';
+      big.style.height = '100%';
+      big.style.objectFit = 'contain';
+      visualEl.appendChild(big);
+      show();
+    });
+  });
+
+  // ---- Preview foto bukti skill ----
+  document.querySelectorAll('.skill-photo-item img').forEach(img => {
+    img.addEventListener('click', () => {
+      visualEl.style.background = '#05060a';
+      visualEl.innerHTML = '';
+      const big = document.createElement('img');
+      big.src = img.src;
+      big.alt = img.alt;
+      big.style.width = '100%';
+      big.style.height = '100%';
+      big.style.objectFit = 'contain';
+      visualEl.appendChild(big);
+      show();
+    });
+  });
+
   closeBtn.addEventListener('click', close);
   lightbox.addEventListener('click', (e) => { if (e.target === lightbox) close(); });
   window.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
@@ -159,4 +185,27 @@
   prevBtn.addEventListener('click', () => go(-1));
   nextBtn.addEventListener('click', () => go(1));
   dots.forEach((d, i) => d.addEventListener('click', () => { index = i; render(); }));
+})();
+
+/* ---------------------------------------------------------
+   7. BINTANG JATUH — muncul tiap 5 menit saat mode malam
+   --------------------------------------------------------- */
+(function shootingStar() {
+  const home = document.getElementById('home');
+  const scene = home?.querySelector('.mc-scene');
+  if (!home || !scene) return;
+
+  const FIVE_MINUTES = 5 * 60 * 1000;
+
+  function spawn() {
+    if (home.dataset.time !== 'night') return;
+    const star = document.createElement('span');
+    star.className = 'shooting-star';
+    star.style.top = (Math.random() * 30 + 5) + '%';
+    star.style.left = (Math.random() * 40 + 50) + '%';
+    scene.appendChild(star);
+    star.addEventListener('animationend', () => star.remove());
+  }
+
+  setInterval(spawn, FIVE_MINUTES);
 })();
